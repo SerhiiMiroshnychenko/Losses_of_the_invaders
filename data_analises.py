@@ -1,5 +1,4 @@
 import json
-import matplotlib
 
 list_of_lists = []
 for step in range(0, 250, 50):
