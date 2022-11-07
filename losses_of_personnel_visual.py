@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 from data_analises import days, all_personnel_units
+from calculation_of_losses_per_day import losses_per_days
 
 
 plt.style.use('dark_background')
 fig, ax = plt.subplots()
 point_numbers = range(len(all_personnel_units))
-ax.scatter(days, all_personnel_units, c=point_numbers, cmap=plt.cm.Reds, edgecolor='none', s=1000)
+ax.scatter(days, all_personnel_units, c=point_numbers, cmap=plt.cm.Reds, edgecolor='none', s=losses_per_days)
+
 
 ax.set_title('ВТРАТИ ОСОБОВОГО СКЛАДУ росіян ПО ДНЯМ ВІЙНИ', fontsize=24)
 ax.set_xlabel('День війни', fontsize=24)
