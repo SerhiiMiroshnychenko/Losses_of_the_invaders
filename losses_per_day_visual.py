@@ -38,7 +38,7 @@ offline.plot(fig, filename='losses_of_orcs.html')
 plt.style.use('dark_background')
 fig, ax = plt.subplots()
 point_numbers = range(len(all_personnel_units))
-ax.scatter(days, losses_per_days, losses_per_days, c="red", alpha=0.5, marker=r'$\sword$',
+ax.scatter(days, losses_per_days, losses_per_days, c="red", alpha=0.5, marker=r'$\plus$',
            label="Мертві москалі")
 
 ax.set_title('ДИНАМКА ЩОДОБОВИХ ВТРАТ МОСКАЛІВ', fontsize=24)
@@ -49,6 +49,6 @@ ax.legend()
 ax.tick_params(axis='both', labelsize=14)
 
 # Задати діапазон для кожної осі
-ax.axis([0, 260, 0, 3000])  # ax.axis([min_x, max_x, min_y, max_y])
+ax.axis([0, 260, 0, 3500])  # ax.axis([min_x, max_x, min_y, max_y])
 
 plt.show()
