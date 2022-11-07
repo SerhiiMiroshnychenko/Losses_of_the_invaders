@@ -38,7 +38,7 @@ offline.plot(fig, filename='losses_of_orcs.html')
 plt.style.use('dark_background')
 fig, ax = plt.subplots()
 point_numbers = range(len(all_personnel_units))
-ax.scatter(days, losses_per_days, losses_per_days, c="red", alpha=0.5, marker=r'$\maltese$',
+ax.scatter(days, losses_per_days, losses_per_days, c="red", alpha=0.5, marker=r'$\sword$',
            label="Мертві москалі")
 
 ax.set_title('ДИНАМКА ЩОДОБОВИХ ВТРАТ МОСКАЛІВ', fontsize=24)
