@@ -51,8 +51,3 @@ for list_of_dict in list_of_lists:
 
 print(days)
 print(all_personnel_units)
-
-
-
-
-
